@@ -4,23 +4,23 @@
 {% load webpage_extras %}
 {% block content %}
 
-<div class="jumbotron" style="min-height: 400px; padding:0; background-image: url('http://thinktanknetworkresearch.net/blog_ttni_en/wp-content/uploads/2019/05/alina-grubnyak-1254785-unsplash_3.jpg')" title="">
+<div class="jumbotron" style="min-height: 400px; padding:0; background-image: url('{{ PROJECT_TITLE_IMG }}')" title="">
 </div>
 <div class="container">
         <div class="card card-index">
             <div class="card-body">
                 <h1 class="text-center title-index">
-                Think Tank network Research
+                {% projects_metadata 'title' %}
                 </h1>
                 <p class="text-center text-muted paragraph-index">
-                Mapping the networks of Think Tanks in Europe
+                    {% projects_metadata 'subtitle' %}
                 </p>
                 <hr class="hr-index"/>
                 <p class="text-justify">
-		        This site is on Think Tanks...
-                </p>
+                    {% projects_metadata 'description' %}
+		        </p>
                 <div class="text-right">
-                    <a href="/apis/entities/entity/person/list/" class="btn btn-lg btn-index pulse" class="pull-right">
+                    <a href="/apis/entities/entity/institutions/list/" class="btn btn-lg btn-index pulse" class="pull-right">
                     <b><i class="fa fa-angle-right"></i></b>&nbsp;&nbsp;explore
                     </a>
                 </div>
