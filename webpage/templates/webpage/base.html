@@ -145,14 +145,6 @@
             </nav>
             <!-- .site-navigation -->
         </div>
-        <div id="content">
-            {% if DEV_VERSION %}
-            <div class="alert alert-danger" role="alert">
-                This is our DEVELOPMENT instance. Click <a href="https://{{ PROJECT_NAME }}.acdh.oeaw.ac.at">here</a> for the Production version, if you like to.
-            </div>
-            {% endif %}
-            {% block content %}{% endblock %}
-        </div>
         <div class="wrapper fundament-default-footer" id="wrapper-footer-full">
             <div class="container-fluid" id="footer-full-content" tabindex="-1">
                 <div class="footer-separator">
