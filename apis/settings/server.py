@@ -16,9 +16,9 @@ DEATH_REL_NAME = "place of death"
 APIS_BASE_URI = "https://thinktanknetworkresearch.net/"
 
 
-ALLOWED_HOSTS = ["thinktanknetworkresearch.net"]
+ALLOWED_HOSTS = ["thinktanknetworkresearch.net","localhost"]
 # You need to allow '10.0.0.0/8' for service health checks.
-
+INSTALLED_APPS += ['django_extensions']
 
 DEBUG = True
 DEV_VERSION = True
